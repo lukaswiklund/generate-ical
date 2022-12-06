@@ -29,6 +29,10 @@ export default function generateIcal(data: Event): string {
 		result += `${row}\r\n`
 	}
 
+	addRow("BEGIN:VCALENDAR")
+	addRow("VERSION:2.0")
+	addRow("PRODID://Hadermite//ical-generator//EN")
+	addRow("CALSCALE:GREGORIAN")
 	addRow("BEGIN:VEVENT")
 	addRow(`UID:${id}`)
 	addRow(`SEQUENCE:0`)
@@ -84,6 +88,9 @@ export default function generateIcal(data: Event): string {
 	if (data.url !== undefined) {
 		addRow(`URL;VALUE=URI:${escape(data.url)}`)
 	}
+
+	addRow("END:VEVENT")
+	addRow("END:VCALENDAR")
 
 	return result
 }
