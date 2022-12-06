@@ -1,7 +1,6 @@
 import uuid from "uuid-random"
 
 type Event = {
-	productId: string
 	startDate: Date
 	title: string
 	description?: { plain: string; html?: string }
