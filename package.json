@@ -1,14 +1,14 @@
 {
 	"name": "generate-ical",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"author": {
 		"name": "Lukas Wiklund",
 		"email": "lukas@wiklund.se",
-		"url": "https://github.com/Hadermite"
+		"url": "https://github.com/lukaswiklund"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Hadermite/generate-ical"
+		"url": "https://github.com/lukaswiklund/generate-ical"
 	},
 	"files": [
 		"./dist/**/*"
@@ -23,7 +23,7 @@
 		"uuid-random": "^1.3.2"
 	},
 	"devDependencies": {
-		"prettier": "^2.8.0",
-		"typescript": "^4.9.3"
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.2"
 	}
 }
